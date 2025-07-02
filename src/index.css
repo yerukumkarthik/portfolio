@@ -701,7 +701,7 @@ body {
 
 .contact-section {
   padding: 60px 20px;
-  background-image: url('.public/media/bg-home.jpg');
+  background-image: url('../Image/media/bg-home.jpg');
   background-repeat: no-repeat;
   /* background: linear-gradient(to bottom, #1e1e2f, #0f0f1a); */
   color: white;
