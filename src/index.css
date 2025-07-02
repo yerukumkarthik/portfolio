@@ -43,7 +43,7 @@ html {
 }
 /*************Navigation Bar*************/
 .home{
-  background-image: url('./media/bg-home.jpg');
+  background-image: url('../media/bg-home.jpg');
   background-repeat: no-repeat;
 }
 .navBar{
