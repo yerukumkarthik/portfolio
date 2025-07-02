@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 import Effects from './Effects'
 import Education from './Education'
 import './App.css'
-import Projects from './projects'
+import Projects from './Projects'
 import Contact from './contactus'
 import Skills from './skills'
 
