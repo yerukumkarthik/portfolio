@@ -32,10 +32,11 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/yerukumkarthik@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/47751ea86b2dad4cb2960b3c39f967af", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Accept": "application/json"
         },
         body: JSON.stringify({
           name: formData.name,
@@ -46,14 +47,14 @@ function Contact() {
         })
       });
 
-      const data = await response.json();
-      if (data.success === "true") {
+      // const data = await response.json();
+      if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
         setShowPopup(true);
         setTimeout(() => setShowPopup(false), 3000);
       }
     } catch (err) {
-      console.log("Error sending form:", err);
+      console.error("Error sending form:", err);
     } finally {
       setIsSubmitting(false);
     }
