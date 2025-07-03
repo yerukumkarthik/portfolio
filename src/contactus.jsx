@@ -32,7 +32,7 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/47751ea86b2dad4cb2960b3c39f967af", {
+      const response = await fetch("https://formsubmit.co/47751ea86b2dad4cb2960b3c39f967af", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
